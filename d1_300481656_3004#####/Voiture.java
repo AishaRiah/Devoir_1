@@ -17,9 +17,9 @@ public class Voiture {
 	 * @return le type de cette voiture
 	 */
 	public TypeVoiture getType() {
-		// ÉCRIVEZ VOTRE CODE ICI !
+		// FINI ?
 
-		return null; // SUPPRIMEZ CETTE INSTRUCTION APRÈS AVOIR IMPLÉMENTÉ CETTE MÉTHODE
+		return type; 
 	}
 
 	/**
@@ -28,15 +28,18 @@ public class Voiture {
 	 * @param type est le type de la voiture
 	 */
 	public void setType(TypeVoiture type) {
-		// ÉCRIVEZ VOTRE CODE ICI !
+		// FINI ?
+
+		this.type = type;
 	}
 
 	/**
 	 * @return le numéro de plaque
 	 */
 	public String getNumeroPlaque() {
-		// ÉCRIVEZ VOTRE CODE ICI !
-		return null; // SUPPRIMEZ CETTE INSTRUCTION APRÈS AVOIR IMPLÉMENTÉ CETTE MÉTHODE
+		// FINI ?
+
+		return numeroPlaque; 
 	}
 
 	/**
@@ -45,7 +48,9 @@ public class Voiture {
 	 * @param numeroPlaque est le numéro de plaque de la voiture
 	 */
 	public void setNumeroPlaque(String numeroPlaque) {
-		// ÉCRIVEZ VOTRE CODE ICI !
+		// FINI ?
+
+		this.numeroPlaque = numeroPlaque;
 	}
 
 	/**
@@ -55,7 +60,10 @@ public class Voiture {
 	 * @param numeroPlaque est le numéro de plaque de la voiture
 	 */
 	public Voiture(TypeVoiture type, String numeroPlaque) {
-		// ÉCRIVEZ VOTRE CODE ICI !
+		// FINI ?
+
+		this.type = type;
+		this.numeroPlaque = numeroPlaque;
 	}
 
 	/**
