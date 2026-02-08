@@ -17,7 +17,7 @@ public class Voiture {
 	 * @return le type de cette voiture
 	 */
 	public TypeVoiture getType() {
-		// FINI ?
+		// FINI 
 
 		return type; 
 	}
@@ -28,7 +28,7 @@ public class Voiture {
 	 * @param type est le type de la voiture
 	 */
 	public void setType(TypeVoiture type) {
-		// FINI ?
+		// FINI 
 
 		this.type = type;
 	}
@@ -37,7 +37,7 @@ public class Voiture {
 	 * @return le numéro de plaque
 	 */
 	public String getNumeroPlaque() {
-		// FINI ?
+		// FINI 
 
 		return numeroPlaque; 
 	}
@@ -48,7 +48,7 @@ public class Voiture {
 	 * @param numeroPlaque est le numéro de plaque de la voiture
 	 */
 	public void setNumeroPlaque(String numeroPlaque) {
-		// FINI ?
+		// FINI 
 
 		this.numeroPlaque = numeroPlaque;
 	}
@@ -60,7 +60,7 @@ public class Voiture {
 	 * @param numeroPlaque est le numéro de plaque de la voiture
 	 */
 	public Voiture(TypeVoiture type, String numeroPlaque) {
-		// FINI ?
+		// FINI 
 
 		this.type = type;
 		this.numeroPlaque = numeroPlaque;

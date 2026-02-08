@@ -16,10 +16,12 @@ public class InfoEtudiant {
     public static void afficher() {
 
         System.out.println("************************************************************");
-        System.out.println("*                                                          *");
-        System.out.println("*                                                          *");
-        System.out.println("*                                                          *");
-        System.out.println("*                                                          *");
+        System.out.println("* Élève 1 : Lynn Océane Bijoux                             *");
+        System.out.println("*           300481656                                      *");
+        System.out.println("*           section A00                                    *");
+        System.out.println("* Élève 2 : Aisha Nyerere                                  *");
+        System.out.println("*           3004#####                                      *");
+        System.out.println("*           section A00                                    *");
         System.out.println("************************************************************");
         System.out.println();
 

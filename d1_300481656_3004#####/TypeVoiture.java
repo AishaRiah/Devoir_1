@@ -2,5 +2,5 @@
  * @auteur Mehrdad Sabetzadeh, Université d'Ottawa
  */
 public enum TypeVoiture {
-	ELECTRIQUE, PETITE, RÉGULIÈRE, GRANDE, NA;
+	ELECTRIQUE, PETITE, REGULIERE, GRANDE, NA;
 }

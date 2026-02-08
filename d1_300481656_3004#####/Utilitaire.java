@@ -16,7 +16,7 @@ public class Utilitaire {
 			return TypeVoiture.PETITE;
 
 		else if (libelle.equals("R"))
-			return TypeVoiture.RÉGULIÈRE;
+			return TypeVoiture.REGULIERE;
 
 		else if (libelle.equals("G"))
 			return TypeVoiture.GRANDE;
@@ -33,7 +33,7 @@ public class Utilitaire {
 		else if (type == TypeVoiture.PETITE)
 			return "P";
 
-		else if (type == TypeVoiture.RÉGULIÈRE)
+		else if (type == TypeVoiture.REGULIERE)
 			return "R";
 
 		else if (type == TypeVoiture.GRANDE)

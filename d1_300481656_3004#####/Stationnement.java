@@ -59,7 +59,9 @@ public class Stationnement {
 		calculerDimensionsStationnement(nomFichier);
 
 		// instancier les variables conceptionStationnement et occupation !
-		// ÉCRIVEZ VOTRE CODE ICI !
+
+			// Océane here !!!! Kinda confused on this method but i think once « remplirDepuisFichier() » is completed that this will also be completed but corect me if I'm wrong on that
+			// Plz notice this message ToT   		
 
 		// remplir conceptionStationnement et occupation; vous pouvez le faire en
 		// écrivant votre propre code ou, alternativement, en complétant la méthode
@@ -76,7 +78,12 @@ public class Stationnement {
 	 * @param v est la voiture à stationner
 	 */
 	public void stationner(int i, int j, Voiture v) {
-		// ÉCRIVEZ VOTRE CODE ICI !
+		// FINI 
+		if (peutStationnerA(i,j,v)){
+			occupation[i][j] = v;
+		} else {
+			System.out.println("La voiture " + v.toString() + " ne peut pas être garée à (" + i + "," + j + ")");
+		}
 	}
 
 	/**
@@ -89,9 +96,15 @@ public class Stationnement {
 	 *         limites, ou lorsqu’il n’y a aucune voiture stationnée à (i, j)
 	 */
 	public Voiture retirer(int i, int j) {
-		// ÉCRIVEZ VOTRE CODE ICI !
-		return null; // SUPPRIMEZ CETTE INSTRUCTION APRÈS AVOIR IMPLÉMENTÉ CETTE MÉTHODE
+		// FINI 
+		if ((i > nombreRangees || i < 0) || (j > nombrePlacesParRangee || j < 0) || occupation[i][j] == null){
+			return null;
+		} else {
+			Voiture v = occupation[i][j];
+			occupation[i][j] = null;
 
+			return v;
+		}
 	}
 
 	/**
@@ -103,9 +116,49 @@ public class Stationnement {
 	 * @return true si la voiture v peut stationner à (i, j) et false sinon
 	 */
 	public boolean peutStationnerA(int i, int j, Voiture v) {
-		// ÉCRIVEZ VOTRE CODE ICI !
-		return false; // SUPPRIMEZ CETTE INSTRUCTION APRÈS AVOIR IMPLÉMENTÉ CETTE MÉTHODE
-
+		// FINI ??
+		if   ( (conceptionStationnement[i][j] == TypeVoiture.NA) 
+		 	|| (i > nombreRangees || i < 0) 
+		 	|| (j > nombrePlacesParRangee || j < 0) 
+			|| (occupation[i][j] != null)  ){
+			return false;
+		}
+		else if (v.getType() == TypeVoiture.ELECTRIQUE){
+			return true;
+		}
+		else if(v.getType() == TypeVoiture.PETITE){
+			switch (conceptionStationnement[i][j]) {
+				case TypeVoiture.PETITE:
+					return true;
+				case TypeVoiture.REGULIERE:
+					return true;
+				case TypeVoiture.GRANDE:
+					return true;
+				default:
+					return false;
+			}
+		}
+		else if(v.getType() == TypeVoiture.REGULIERE){
+			switch (conceptionStationnement[i][j]) {
+				case TypeVoiture.REGULIERE:
+					return true;
+				case TypeVoiture.GRANDE:
+					return true;
+				default:
+					return false;
+			}
+		}
+		else if(v.getType() == TypeVoiture.GRANDE){
+			switch (conceptionStationnement[i][j]) {
+				case TypeVoiture.GRANDE:
+					return true;
+				default:
+					return false;
+			}
+		}
+		else {
+			return false;
+		}
 	}
 
 	/**
